@@ -1,0 +1,9 @@
+Example Database to design
+A Small database for Gaming Concept with this assumption,
+" A user will play some games, game related data auditing will be done, for that we need these tables"
+
+A users collection to hold user information like (userid(pk),password,balancechips,state,emailid)
+A address collection to hold user Address information like (userid(fk of users table),city,state,country..)
+A games collection to hold Game Details like (gameid(pk),gamename,minbet,maxbet...)
+A loginsession collection to hold user login details means when he/she logged in etc details with fields(userid(fk of users),sessionid,logintime,logouttime,totalbet,totalwin...)
+A gameplaylogs collection to game play details means which played with what bet etc (userid(fk of users),sessionid(fk of loginsession),betamount,winamount,timeofplay...)
